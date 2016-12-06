@@ -1,0 +1,46 @@
+request:
+
+    User->
+
+        Guest :
+
+            /guest/default
+
+            /guest/display/lang/default/
+            /guest/display/lang/ru
+
+            /guest/display/lang/ru/page/purchase
+            /guest/display/lang/ru/page/default
+
+            /guest/display/lang/ru/page/news/id/34
+
+            /guest/download/file/sdfsdf345345
+
+        Editor :
+
+            /editor        |    news, purchase, vacancies, license,
+            /editor/login  |    project, manager, file
+
+            /editor/list   |    news, purchase, vacancies, license, project, manager, file
+
+            /editor/add    |    news, purchase,
+            /editor/update |    vacancies, license,
+            /editor/delete |    project, manager, file
+
+            /editor/upload                       |  purchase, file
+            /editor/download/file/sdfsdf453sf23  |
+
+        Root :
+
+            /root
+
+
+    Display->
+
+        Path :
+
+            guest
+
+            editor
+
+            admin

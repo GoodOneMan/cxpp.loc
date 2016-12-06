@@ -1,0 +1,52 @@
+git init
+git clone https://github.com/GoodOneMan/cxpp.local.git ./cxpp.local
+git status
+git add index.php
+git config --global user.email
+git config --global user.name
+git commit -m "Create file"
+git push
+git pull
+git status --untracked-files=normal
+git help (command)
+git branch -v
+git add .
+git remote -v
+
+Link
+https://githowto.com/ru
+https://git-scm.com/book/ru/v1
+
+
+Quick setup — if you’ve done this kind of thing before
+
+ssh   git@github.com:GoodOneMan/cxpp.local.git
+https https://github.com/GoodOneMan/cxpp.local.git
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# cxpp.local" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/GoodOneMan/cxpp.local.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/GoodOneMan/cxpp.local.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+errors
+
+fatal: 'h' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
