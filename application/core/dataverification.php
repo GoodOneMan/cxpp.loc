@@ -34,6 +34,15 @@ class DataVerification
         return $data;
     }
 
+    /*
+     * Static Method.
+     * Checked Action in Object.
+     * If action not exist return default action
+     */
+    public static function isAction($obj,$action){
+
+    }
+
     /**
      * Class Route
      * @return string
@@ -51,7 +60,11 @@ class DataVerification
      * @return string
      */
     private function getAction(){
-        return $action = $this->data[URI_ACTION];
+        $action = 'display';
+        if(!is_null($this->data[URI_ACTION])){
+            $action = $this->data[URI_ACTION];
+        }
+        return $action;
     }
 
     /**

@@ -1,5 +1,5 @@
 <?php
 
-echo __DIR__.'default';
+echo __DIR__.'guest';
 
 ?>

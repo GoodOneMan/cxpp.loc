@@ -6,8 +6,11 @@ class User
 
     protected function __construct(){}
 
+    protected function isUser(){
 
-    private function isUser(){
+        /*
+         * Session::getSession(array) | array(user_name => '', role => '', key_user => '').
+         */
         switch ($this->controller){
             case 'guest':
                 /**
@@ -32,6 +35,29 @@ class User
         }
     }
 
-    public function logout(){}
+    /**
+     *
+     */
+    public function login(){
+
+        $path = NULL;
+        $page = NULL;
+        $data = NULL;
+
+        if($_POST['send_login']){
+
+        }else{
+
+        }
+
+        (new Display($path = NULL, $page = NULL, $data = NULL))->output();
+    }
+
+    /**
+     *
+     */
+    public function logout(){
+
+    }
 
 }

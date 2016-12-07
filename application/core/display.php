@@ -23,14 +23,14 @@ class Display
      * output page
      */
     public function output(){
-        $this->data;
+        $page_data = $this->data;
         include_once TEMPLATE.'header.php';
         include_once $this->path.$this->page.'.php';
         include_once TEMPLATE.'footer.php';
     }
 
     /**
-     * @param $arg
+     * @param $path
      * @return string
      */
     private function setPath($path){
@@ -41,7 +41,7 @@ class Display
             case 'editor':
                 $path = TEMPLATE.'editor/';
                 break;
-            case 'admin':
+            case 'root':
                 $path = TEMPLATE.'admin/';
                 break;
             default :
@@ -52,7 +52,7 @@ class Display
     }
 
     /**
-     * @param $arg
+     * @param $page
      * @return mixed
      */
     private function setPage($page){

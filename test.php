@@ -10,13 +10,11 @@ class Test
 
     public function guest($arg){
         $this->guest_output($arg);
-        //print_r($arg);
+         //print_r($arg);
     }
 
     private function guest_output($arg){
-        $display = new Display();
-        $display->setPage($arg['page']);
-        $display->setPath($arg['controller']);
+        $display = new Display($arg['controller'],$arg['page'],$arg);
         $display->output();
     }
 }
