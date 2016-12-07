@@ -7,6 +7,12 @@ class Display
     private $page;
     private $data;
 
+    /**
+     * Display constructor.
+     * @param null $path
+     * @param null $page
+     * @param null $data
+     */
     public function __construct($path = NULL, $page = NULL, $data = NULL){
         $this->path = $this->setPath($path);
         $this->page = $this->setPage($page);
